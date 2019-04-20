@@ -97,6 +97,21 @@ runners.forEach((runners) => {
 
 console.log(emailList);
 
-// Problem 2
+// Problem 2 Find people who work for a certain company.
 
-// Problem 3
+let companySort = runners.filter((runners) => {
+    return runners.company_name == 'Skinix';
+}); 
+
+console.log(companySort);
+
+
+// Problem 3 list all people who donated over 200 dollars and add a new property 'prize winner'. 
+let prizeWinners = [];
+ runners.forEach((runners) => {
+    if (runners.donation >= 200) {
+        return prizeWinners.push({'first_name': runners.first_name, 'donation': runners.donation, 'prize_winner': 'Y'})
+    }
+}); 
+
+console.log(prizeWinners);
