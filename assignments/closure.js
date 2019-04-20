@@ -1,6 +1,17 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+let totalBoards = 0;
+  function addBoards(){
+    totalBoards = totalBoards + 1;
+    console.log(totalBoards);
+  }
+
+  addBoards();
+  addBoards();
+  addBoards();
+  addBoards();
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
